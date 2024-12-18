@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)) ,url("hero5.jpg");
+}
+.text-theme{
+  color: #5F0A8C;
+}
+.bg-theme{
+  background-color: #5F0A8C;
+}
