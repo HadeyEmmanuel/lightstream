@@ -10,7 +10,7 @@ const LoginPage = () => {
 		e.preventDefault();
 		login({ email, password });
 	};
-    return <div className="h-screen w-full hero-bg">
+    return <div className="h-screen w-full hero-bg1">
     <header className="max-w-6xl mx-auto flex items-center justify-between p-4">
                 <Link to={"/"}>
 					<img src='/lightstream.png' alt='logo' className='w-52' />

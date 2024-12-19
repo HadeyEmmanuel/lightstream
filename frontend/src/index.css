@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-bg{
+.hero-bg1{
   background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) ,url("hero5.jpg");
 }
 .text-theme{
