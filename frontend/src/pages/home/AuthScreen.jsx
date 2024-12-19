@@ -10,7 +10,7 @@ const AuthScreen = () => {
 		navigate("/signup?email=" + email);
 	};
   return (
-    <div className="hero-bg1 relative">
+    <div className="hero-bg relative">
         <header className='max-w-6xl mx-auto flex items-center justify-between p-4 pb-8'>
                 <Link to={"/"}>
 					<img src='/lightstream.png' alt='logo' className='w-52' />
