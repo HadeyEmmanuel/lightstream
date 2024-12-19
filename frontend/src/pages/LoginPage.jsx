@@ -12,13 +12,13 @@ const LoginPage = () => {
 	};
     return <div className="h-screen w-full hero-bg">
     <header className="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <Link to={"/"}>
-        <h1 className="font-semibold text-4xl text-purple-700">LightStream</h1>
-    </Link>
+                <Link to={"/"}>
+					<img src='/lightstream.png' alt='logo' className='w-52' />
+				</Link>
     </header>
 
     <div className="flex justify-center items-center mt-20 mx-auto">
-        <div className="w-full max-w-md p-8 space-y-6 bg-black/80 rounded-lg shadow-md">
+        <div className="w-full max-w-md p-8 space-y-6 bg-black/60 rounded-lg shadow-md">
             <h1 className="text-white text-center text-2xl font-bold mb-4">
                 Login
             </h1>   
@@ -42,11 +42,11 @@ const LoginPage = () => {
                  bg-transparent text-white focus:outline-none focus:ring" placeholder="******" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
                  
-            <button className="w-full py-2 bg-theme text-white font-semibold rounded-md hover:bg-purple-800">{isLoggingIn ? "Loading..." : "Login"}</button>
+            <button className="w-full py-2  bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-600">{isLoggingIn ? "Loading..." : "Login"}</button>
             </form>
 
             <div className="text-center text-gray-400">
-                Don't have an account? <Link to={"/signup"} className="text-purple-700 hover:underline">
+                Don't have an account? <Link to={"/signup"} className=" text-orange-600 hover:underline">
                 Sign Up
                 </Link>
             </div>

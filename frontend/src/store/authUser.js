@@ -35,6 +35,7 @@ export const useAuthStore = create((set) => ({
 			await axios.post("https://lightstream-backend.onrender.com/api/v1/auth/logout");
 			set({ user: null, isLoggingOut: false });
 			toast.success("Logged out successfully");
+			
 		} catch (error) {
 			set({ isLoggingOut: false });
 			toast.error(error.response.data.message || "Logout failed");

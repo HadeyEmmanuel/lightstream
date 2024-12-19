@@ -21,8 +21,8 @@ const SignUpPage = () => {
 		<div className='h-screen w-full hero-bg'>
 			<header className='max-w-6xl mx-auto flex items-center justify-between p-4'>
             <Link to={"/"}>
-        <h1 className="font-semibold text-4xl text-purple-700">LightStream</h1>
-    </Link>
+					<img src='/lightstream.png' alt='logo' className='w-52' />
+			</Link>
 			</header>
 
 			<div className='flex justify-center items-center mt-20 mx-3'>
@@ -72,10 +72,7 @@ const SignUpPage = () => {
 							/>
 						</div>
 
-						<button
-							className='w-full py-2 bg-theme text-white font-semibold rounded-md
-							hover:bg-purple-800
-						'
+						<button className="w-full py-2  bg-orange-600 text-white font-semibold rounded-md hover:bg-orange-600"
 							disabled={isSigningUp}
 						>
 							{isSigningUp ? "Loading..." : "Sign Up"}
@@ -83,7 +80,7 @@ const SignUpPage = () => {
 					</form>
 					<div className='text-center text-gray-400'>
 						Already a member?{" "}
-						<Link to={"/login"} className='text-purple-800 hover:underline'>
+						<Link to={"/login"} className=' text-orange-600 hover:underline'>
 							Sign in
 						</Link>
 					</div>
