@@ -22,7 +22,7 @@ const AuthScreen = () => {
 
         {/* hero section */}
         <div className='flex flex-col items-center justify-center text-center py-10 text-white max-w-6xl mx-auto'>
-            <h1 className='text-4xl md:text-6xl font-bold mb-4'>Christian movies, TV shows, and more</h1>
+            <h1 className='text-4xl md:text-6xl font-bold mb-4'><span className="text-theme">Christian</span> movies, TV shows, <span className="text-theme">and more</span></h1>
             <p className='text-lg mb-4'>Watch anywhere. Cancel anytime.</p>
             <p className='mb-4'>Ready to watch? Enter your email to create or restart your membership.</p>
 
