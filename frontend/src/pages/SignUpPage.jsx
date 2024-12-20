@@ -72,7 +72,7 @@ const SignUpPage = () => {
 							/>
 						</div>
 
-						<button className="w-full py-2  bg-yellow-600 text-white font-semibold rounded-md hover:bg-yellow-600"
+						<button className="w-full py-2  bg-theme text-white font-semibold rounded-md hover:bg-theme"
 							disabled={isSigningUp}
 						>
 							{isSigningUp ? "Loading..." : "Sign Up"}
@@ -80,7 +80,7 @@ const SignUpPage = () => {
 					</form>
 					<div className='text-center text-gray-400'>
 						Already a member?{" "}
-						<Link to={"/login"} className=' text-yellow-500 hover:underline'>
+						<Link to={"/login"} className=' text-theme hover:underline'>
 							Sign in
 						</Link>
 					</div>

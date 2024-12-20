@@ -42,11 +42,11 @@ const LoginPage = () => {
                  bg-transparent text-white focus:outline-none focus:ring" placeholder="******" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
 
                  
-            <button className="w-full py-2  bg-yellow-600 text-white font-semibold rounded-md hover:bg-yellow-600">{isLoggingIn ? "Loading..." : "Login"}</button>
+            <button className="w-full py-2  bg-theme text-white font-semibold rounded-md hover:bg-theme">{isLoggingIn ? "Loading..." : "Login"}</button>
             </form>
 
             <div className="text-center text-gray-400">
-                Don't have an account? <Link to={"/signup"} className=" text-yellow-500 hover:underline">
+                Don't have an account? <Link to={"/signup"} className=" text-theme hover:underline">
                 Sign Up
                 </Link>
             </div>
