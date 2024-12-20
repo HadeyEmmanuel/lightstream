@@ -49,7 +49,7 @@ const AuthScreen = () => {
 				<div className='flex max-w-6xl mx-auto items-center justify-center md:flex-row flex-col px-4 md:px-2'>
 					{/* left side */}
 					<div className='flex-1 text-center md:text-left'>
-						<h2 className='text-4xl md:text-5xl font-extrabold mb-4'>Enjoy on your TV</h2>
+						<h2 className='text-4xl md:text-5xl font-extrabold mb-4'><span className="text-theme">Enjoy</span> on your <span className="text-theme">TV</span></h2>
 						<p className='text-lg md:text-xl'>
 							Watch on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.
 						</p>
@@ -85,10 +85,8 @@ const AuthScreen = () => {
                                 <div className=' flex justify-between items-center w-full'>
                                     <div className='flex flex-col gap-0'>
                                         <span className='text-md lg:text-lg font-bold'>War Room</span>
-                                        <span className='text-sm text-purple-700'>Downloading...</span>
+                                        <span className='text-sm text-theme'>Downloading...</span>
                                     </div>
-
-                                    <img src='/download-icon.gif' alt='' className='h-12' />
                                 </div>
                             </div>
                         </div>
@@ -97,7 +95,7 @@ const AuthScreen = () => {
 
                     <div className='flex-1 md:text-left text-center px-10 '>
                         <h2 className='text-4xl md:text-5xl font-extrabold mb-4 text-balance'>
-                            Download your shows to watch offline
+                        <span className="text-theme">Download</span> your shows to watch <span className="text-theme">offline</span>
                         </h2>
                         <p className='text-lg md:text-xl'>
                             Save your favorites easily and always have something to watch.
@@ -115,7 +113,7 @@ const AuthScreen = () => {
     <div className='flex max-w-6xl mx-auto items-center justify-center md:flex-row flex-col px-4 md:px-2'>
         {/* left side */}
         <div className='flex-1 text-center md:text-left'>
-            <h2 className='text-4xl md:text-5xl font-extrabold mb-4'>Watch everywhere</h2>
+            <h2 className='text-4xl md:text-5xl font-extrabold mb-4 text-theme'>Watch everywhere</h2>
             <p className='text-lg md:text-xl'>
                 Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
             </p>
