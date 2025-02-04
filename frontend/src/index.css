@@ -8,8 +8,36 @@
 }
 
 .bg-theme{
-	background-color: #FAAD07;
+	background-image: linear-gradient(rgba(225, 152, 21, 0.5), rgba(0, 10, 26, 0.9)) ;
+}
+.bg-theme2{
+	background-image: linear-gradient(rgba(225, 152, 21, 100%), rgba(0, 18, 50, 90%)) ;
+}
+.bg-theme1{
+	background-image: linear-gradient(rgba(255, 255, 255, 100%), rgba(0, 18, 50, 100%)) ;
 }
 .text-theme{
 	color: #FAAD07;
 }
+.card{
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.swiper-slider{
+	aspect-ratio: 2/3;
+	border-radius: 14px;
+}
+.swiper-slider img{
+	
+	position: relative;
+	border-radius: inherit;
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+.play{
+	position: relative;
+	border-radius: 50%;
+}
+
+

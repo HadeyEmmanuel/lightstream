@@ -1,53 +1,55 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { LogOut, Menu, Search } from "lucide-react";
-import { useAuthStore } from "../store/authUser";
+import { Menu } from "lucide-react";
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { logout } = useAuthStore();
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 	return (
-		<header className='max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20'>
+		<header className='width-full mx-auto flex flex-wrap items-center justify-between px-5 md:px-20  h-20 shadow-2xl bg-[#000A1A]'>
 			<div className='flex items-center gap-10 z-50'>
     <Link to={"/"}>
-        <h1 className="font-semibold text-4xl text-purple-700">LightStream</h1>
+		<img src='/lightstreamYellow.png' alt='logo' className='w-52' />	
     </Link>
 
 				{/* desktop navbar items */}
-				<div className='hidden sm:flex gap-2 items-center px-20'>
-					<Link to='/' className='hover:text-purple-600'>
-						Movies
-					</Link>
-					<Link to='/' className='hover:text-purple-600'>
-						Tv Shows
-					</Link>
-					<Link to='/history' className='hover:text-purple-600'>
-						Search History
-					</Link>
-				</div>
+				
 			</div>
 
-      <div className='flex gap-2 items-center z-50'>
-					<Link to={"/search"}>
-						<Search className='size-6 cursor-pointer hover:text-purple-600' />
+      <div className='flex gap-5 items-center z-50 '>
+				<div className='hidden  sm:flex max-lg:hidden gap-5 items-center '>
+					<Link to='/' className='hover:text-[#FF9815] text-[#F7FFFB]'>
+						Home
 					</Link>
-					<LogOut className='size-6 cursor-pointer hover:text-purple-600' onClick={logout} />
+					<Link to='/' className='hover:text-[#FF9815] text-[#F7FFFB]'>
+						About Us
+					</Link>
+					<Link to='/pricing' className='hover:text-[#FF9815] text-[#F7FFFB]'>
+						Pricing
+					</Link>
+					</div>
+					<Link to={"/login"}>
+					<button className="border-2 border-[#FF9815] rounded-md py-2 px-3 hover:bg-[#FF9815]" >Login</button>
+					</Link>
+					<Link to={"/signup"}>
+					<button className="bg-[#FF9815] rounded-md px-3 py-2">Join Us</button>
+					</Link>
+					
 					<div className='sm:hidden'>
-						<Menu className='size-6 cursor-pointer hover:text-purple-600' onClick={toggleMobileMenu} />
+						<Menu className='size-6 cursor-pointer hover:text-[#FF9815]' onClick={toggleMobileMenu} />
 					</div>
 				</div>
 
 
 			{/* mobile navbar items */}
       {isMobileMenuOpen && (
-					<div className='w-full sm:hidden mt-4 z-50 bg-black border rounded border-gray-800'>
-						<Link to={"/"} className='block hover:bg-purple-800 p-2' onClick={toggleMobileMenu}>
+					<div className='w-full sm:hidden mt-4 z-50 bg-[#000A1A] border rounded border-gray-800'>
+						<Link to={"/"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
 							Movies
 						</Link>
-						<Link to={"/"} className='block hover:bg-purple-800 p-2' onClick={toggleMobileMenu}>
+						<Link to={"/"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
 							Tv Shows
 						</Link>
-						<Link to={"/history"} className='block hover:bg-purple-800 p-2' onClick={toggleMobileMenu}>
+						<Link to={"/history"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
 							Search History
 						</Link>
 					</div>
