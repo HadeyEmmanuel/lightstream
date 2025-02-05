@@ -35,7 +35,7 @@ const Slider = ({ slides }) => {
           <img src={slide.img} alt="" />
         </SwiperSlide>
       ))}
-      <Play className='size-24 play'/>
+      {/* <Play className='size-24 play'/> */}
       
     </Swiper>
     </div>
