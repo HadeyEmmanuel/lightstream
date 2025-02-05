@@ -28,10 +28,10 @@ const Navbar = () => {
 					</Link>
 					</div>
 					<Link to={"/login"}>
-					<button className="border-2 border-[#FF9815] rounded-md py-2 px-3 hover:bg-[#FF9815]" >Login</button>
+					<button className="border-2 border-[#FF9815] rounded-md py-2 px-3 max-sm:hidden hover:bg-[#FF9815]" >Login</button>
 					</Link>
 					<Link to={"/signup"}>
-					<button className="bg-[#FF9815] rounded-md px-3 py-2">Join Us</button>
+					<button className="bg-[#FF9815] max-sm:hidden rounded-md px-3 py-2">Join Us</button>
 					</Link>
 					
 					<div className='sm:hidden'>
@@ -44,14 +44,22 @@ const Navbar = () => {
       {isMobileMenuOpen && (
 					<div className='w-full sm:hidden mt-4 z-50 bg-[#000A1A] border rounded border-gray-800'>
 						<Link to={"/"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
-							Movies
+							Home
 						</Link>
 						<Link to={"/"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
-							Tv Shows
+						About Us
 						</Link>
 						<Link to={"/history"} className='block hover:bg-[#FF9815] p-2' onClick={toggleMobileMenu}>
-							Search History
+						Pricing
 						</Link>
+						<div className="p-2 flex ">
+							<Link to={"/login"} onClick={toggleMobileMenu}>
+								<button className="border-2 border-[#FF9815] rounded-md p-2  hover:bg-[#FF9815]" >Login</button>
+							</Link>
+							<Link to={"/signup"} onClick={toggleMobileMenu} className="px-2">
+								<button className="bg-[#FF9815] rounded-md p-2">Join Us</button>
+							</Link>
+						</div>
 					</div>
 				)}
 			
