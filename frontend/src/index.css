@@ -33,8 +33,17 @@
 	border-radius: inherit;
 	display: block;
 	width: 100%;
+	height:min-content;
 	object-fit: cover;
 }
+
+@media (max-width: 640px){
+	.swiper{
+		width: 500px;
+	}
+
+}
+
 .play{
 	position: relative;
 	border-radius: 50%;

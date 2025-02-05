@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Play } from "lucide-react";
+// import { Play } from "lucide-react";
 import { EffectCoverflow, Mousewheel } from 'swiper/modules';
 import 'swiper/css/effect-coverflow';
 const Slider = ({ slides }) => {

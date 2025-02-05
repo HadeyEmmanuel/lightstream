@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 	return (
-		<header className='width-full mx-auto flex flex-wrap items-center justify-between px-5 md:px-20  h-20 shadow-2xl bg-[#000A1A]'>
+		<header className='sticky w-full mx-auto flex flex-wrap items-center justify-between px-5 md:px-20  h-20 shadow-2xl bg-[#000A1A]'>
 			<div className='flex items-center gap-10 z-50'>
     <Link to={"/"}>
 		<img src='/lightstreamYellow.png' alt='logo' className='w-52' />	
