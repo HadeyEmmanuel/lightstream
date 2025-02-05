@@ -6,7 +6,7 @@ const homescreen = () => {
   return (
     <div className='h-screen text-white relative'>
       <Navbar/>
-          <div className="p-20 bg-[#000A1A] ">
+          <div className="p-10 max-sm:p-5 bg-[#000A1A] ">
             <Swiper slides={slides}/>
           </div>
           <div className="p-10 flex flex-col items-center justify-center bg-[#000A1A] ">

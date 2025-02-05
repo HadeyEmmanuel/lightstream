@@ -41,7 +41,14 @@
 	.swiper{
 		width: 500px;
 	}
-
+	.swiper-slider img{
+		
+		position: relative;
+		border-radius: inherit;
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
 }
 
 .play{
